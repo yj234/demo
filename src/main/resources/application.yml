@@ -1,0 +1,36 @@
+jasypt:
+  encryptor:
+    property:
+      prefix: audaque(
+      suffix: )
+
+#数据源
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mytest?serverTimezone=UTC&useSSL=false
+#在配置文件中使用时，我们需要用ENC()语法包裹加密字段,代码运行时jasypt-spring-boot组件会自动将自动解密，数据得以还原。
+    username: audaque(Z5M+ZLpBJgS3KfuFL/2sCw==)
+    password: audaque(SzceHungoto6QL1N5mFH7gokGZkJgFFC)
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+#mybatis
+mybatis:
+  type-aliases-package: com.review.demo.model
+  mapper-locations: classpath:com/review/demo/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+#pagehelper插件
+pagehelper:
+  #标识哪种数据库，这个是必须项，其他三个经过测试 可不必
+  helper-dialect: mysql
+ #value=true时，pageNum小于1会查询第一页，如果pageNum大于pageSize会查询最后一页
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+#日志打印
+logging:
+  level:
+    com.review.demo: debug
+

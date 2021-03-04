@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.review.demo.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.review.demo.model.User">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="pass_word" jdbcType="VARCHAR" property="passWord" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="create_time" jdbcType="VARCHAR" property="createTime" />
+  </resultMap>
+
+    <select id="selectByContent1" resultMap="BaseResultMap">
+        select id,user_name,pass_word,url,create_time from user
+            <if test="createTime != null">
+                where create_time &gt; #{createTime,javaType=string}
+            </if>
+            order by create_time
+    </select>
+
+    <insert id="insertUserDept">
+        insert into user_dept(dept_id,user_id) values
+        <foreach collection="list" item="param" separator=",">
+          (#{param.deptId},#{param.userId})
+        </foreach>
+    </insert>
+
+    <insert id="insertUserRole">
+        insert into user_role(role_id,user_id) values
+        <foreach collection="list" item="param" separator=",">
+            (#{param.roleId},#{param.userId})
+        </foreach>
+    </insert>
+</mapper>
