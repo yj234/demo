@@ -1,0 +1,14 @@
+2021-12-07 21:12:05.098  INFO 328 --- [restartedMain] com.example.demouse.DemouseApplication   : Starting DemouseApplication on DESKTOP-8SQ4BVK with PID 328 (E:\study\demo\demouse\target\classes started by Administrator in E:\study\demo)
+2021-12-07 21:12:05.102  INFO 328 --- [restartedMain] com.example.demouse.DemouseApplication   : No active profile set, falling back to default profiles: default
+2021-12-07 21:12:05.136  INFO 328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-07 21:12:05.136  INFO 328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-07 21:12:05.876  INFO 328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-07 21:12:05.881  INFO 328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-07 21:12:05.881  INFO 328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-12-07 21:12:05.921  INFO 328 --- [restartedMain] o.a.c.c.C.[.[localhost].[/demouse]       : Initializing Spring embedded WebApplicationContext
+2021-12-07 21:12:05.921  INFO 328 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 784 ms
+2021-12-07 21:12:06.215  INFO 328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-07 21:12:06.257  INFO 328 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-07 21:12:06.367  INFO 328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-07 21:12:06.386  INFO 328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/demouse'
+2021-12-07 21:12:06.392  INFO 328 --- [restartedMain] com.example.demouse.DemouseApplication   : Started DemouseApplication in 1.524 seconds (JVM running for 1.965)

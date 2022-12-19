@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="2px">
+    <tr>
+        <td>年龄</td>
+        <td>姓名</td>
+    </tr>
+    <tr th:if="${list.isEmpty()}">
+        <td colspan="2">没有数据</td>
+    </tr>
+    <tr th:each="student:${list}">
+       <td th:text="${student.age}"></td>
+       <td th:text="${student.name}"></td>
+    </tr>
+</table>
+<h2>使用thymeleaf 的工具 记得加#</h2>
+<div th:text="${#dates.format(date,'yyyy-MM-dd')}"></div>
+
+</body>
+</html>

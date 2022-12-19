@@ -1,0 +1,7 @@
+2021-10-10 13:37:37.718  INFO 8488 --- [main] c.e.demouse.DemouseApplicationTests      : Starting DemouseApplicationTests on DESKTOP-8SQ4BVK with PID 8488 (started by Administrator in E:\study\demo\demouse)
+2021-10-10 13:37:37.723  INFO 8488 --- [main] c.e.demouse.DemouseApplicationTests      : No active profile set, falling back to default profiles: default
+2021-10-10 13:37:39.262  INFO 8488 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-10 13:37:39.365  INFO 8488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-10-10 13:37:39.694  INFO 8488 --- [main] c.e.demouse.DemouseApplicationTests      : Started DemouseApplicationTests in 2.169 seconds (JVM running for 2.858)
+2021-10-10 13:37:39.885  INFO 8488 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-10 13:37:39.886  INFO 8488 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-0} closing ...
